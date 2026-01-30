@@ -1,0 +1,51 @@
+.profile-card {
+  position: relative;
+  z-index: 10;
+
+
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+
+  border: 2px solid #000;
+  border-radius: 10px;
+
+  background: papayawhip;
+  text-align: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.profile-card h2 {
+  margin: 15px 0;
+}
+
+.profile-card p {
+  text-align: left;
+  margin: 8px 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+  color: blue;
+}
+
+
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+body{
+    background-color: #9E1F24;
+}

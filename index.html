@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web bán len cuộn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            TIỆM LEN MÓC
+        </div>
+        <ul class="menu">
+            <li><a href="">Trang chủ</a></li>
+            <li><a href="">Sản phẩm</a>
+                <ul>
+                    <li><a href="">len nhung đũa</a></li>
+                    <li><a href="">len yaoh</a></li>
+                    <li><a href="">sản phẩm móc sẵn</a></li>
+                    <li><a href="">len xù</a></li>
+                </ul>
+            </li>
+            <li><a href="">Giảm giá</a>
+                <ul class="dropdown">
+                    <li><a href="giamgia.html" data-type="lenbo">len bò</a></li>
+                    <li><a href="giamgia.html" data-type="kimkhau">kim khâu len</a></li>
+                    <li><a href="giamgia.html" data-type="mocdanhdau">móc đánh dấu</a></li>
+                    <li><a href="giamgia.html" data-type="mockhoa">móc khóa</a></li>
+                </ul>
+            </li>
+            <li><a href="">Liên hệ</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="topbar">
+        <div class="right-actions">
+
+            <!-- GIỎ HÀNG -->
+            <div id="actions">
+                <a href="giohang.html" class="cart">🛒 Giỏ hàng</a>
+
+                <span class="auth-text" onclick="toggleMenu(event)">
+                    Đăng nhập
+                </span>
+            </div>
+
+            <!-- ĐĂNG NHẬP -->
+            <div class="auth">
+                <div class="dropdown" id="dropdown" onclick="stop(event)">
+                    <div class="form" id="loginForm">
+                        <h3>Đăng nhập</h3>
+                        <input type="text" id="loginUser" placeholder="Tên đăng nhập">
+                        <input type="password" id="loginPass" placeholder="Mật khẩu">
+                        <button onclick="login()">Đăng nhập</button>
+                        <p onclick="showRegister()">Chưa có tài khoản? Đăng ký</p>
+                    </div>
+
+                    <div class="form" id="registerForm" style="display:none;">
+                        <h3>Đăng ký</h3>
+                        <input type="text" id="regUser" placeholder="Tên đăng nhập">
+                        <input type="password" id="regPass" placeholder="Mật khẩu">
+                        <button onclick="register()">Đăng ký</button>
+                        <p onclick="showLogin()">Đăng nhập</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="banner">
+        <div class="box-left">
+            <h2>
+                <span>LEN</span>
+                <br>
+                <span>CUỘN</span>
+            </h2>
+            <p>Chuyên cung cấp len cuộn chất lượng cao, giá rẻ,
+                hàng xịn và chính hãng, luôn đảm bảo hàng chất lượng để phục
+                vụ khách hàng một cách hoàn hảo nhất và đem lại sự tin tưởng cho khác hàng</p>
+            <button>mua ngay</button>
+        </div>
+        <div class="box-right">
+            <img src="./images/lenn1.jpg" alt="lỗi" class="product-img c1">
+            <img src="./images/lenn2.jpg" alt="lỗi" class="product-img c2">
+            <img src="./images/lenn3.jpg" alt="lỗi" class="product-img c3">
+        </div>
+        <div class="to-bottom">
+            <a href="">
+                <img src="./images/to-bottom.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div id="wp-products">
+        <h2>Sản Phẩm Của Chúng Tôi</h2>
+        <ul id="list-len">
+            <div class="item">
+            </div>
+
+        </ul>
+        <div class="card-container">
+
+            <div class="card">
+                <img src="./images/lenn3.jpg" alt="">
+                <div class="card-body">
+                    <h3>Len cuộn dài 3 màu</h3>
+                    <p>combo 3 món len cuộn dài 250gram để móc khăn, đan khăn</p>
+                    <br>
+                    <p><b>450.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="1" data-name="Len cuộn dài 3 màu" data-price="450000">thêm
+                        vào giỏ</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/lenme1.jpg" alt="">
+                <div class="card-body">
+                    <h3>Len Merino</h3>
+                    <p>len cuộn merino 150gram, sợi mỏng và nhỏ dùng để móc, đan áo</p>
+                    <br>
+                    <p><b>550.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="2" data-name="Len Merino" data-price="550000">thêm vào
+                        giỏ</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/lenmilk.jpg" alt="">
+                <div class="card-body">
+                    <h3> Combo 4 cuộn len Milk Cotton</h3>
+                    <p>combo 4 cuộn len cuộn milk cotton 150gram, sợi mỏng và nhỏ dùng để móc các con thú hoặc đồ
+                        dùng</p>
+                    <br>
+                    <p><b>350.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="3" data-name="Combo 4 cuộn len Milk Cotton"
+                        data-price="350000">thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/cottonlove.jpg" alt="">
+                <div class="card-body">
+                    <h3> Combo 2 cuộn len Cotton Love</h3>
+                    <p>combo 2 cuộn len cotton love 150gram, sợi mỏng và nhỏ dùng để móc các con thú hoặc đồ
+                        dùng, có thể đan khăn quàng cho mùa đông</p>
+                    <br>
+                    <p><b>120.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="4" data-name="Combo 2 cuộn len Cotton Love"
+                        data-price="120000">thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/nhungdua.jpg" alt="">
+                <div class="card-body">
+                    <h3> Combo 2 cuộn len nhung đũa</h3>
+                    <p>combo 2 cuộn len nhung đũa 150gram, len sợi to dùng để làm túi xách hoặc gấu bông</p>
+                    <br>
+                    <p><b>140.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="5" data-name="Combo 2 cuộn len nhung đũa"
+                        data-price="140000">thêm vào giỏ</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/lento.jpg" alt="">
+                <div class="card-body">
+                    <h3> Combo 3 cuộn len sợi nhỏ 250gram</h3>
+                    <p>combo 3 cuộn len sợi nhỏ 250gram, sợi mỏng và nhỏ dùng để móc áo hoặc đồ
+                        dùng</p>
+                    <br>
+                    <p><b>600.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="6" data-name="Combo 3 cuộn len sợi nhỏ 250gram"
+                        data-price="600000">thêm vào giỏ</button>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="./images/lenmix.jpg" alt="">
+                <div class="card-body">
+                    <h3> Combo len sợi nhỏ 250gram mix màu loang</h3>
+                    <p>combo len sợi nhỏ mix màu loang 250gram, sợi mỏng và nhỏ dùng để móc áo hoặc đồ
+                        dùng</p>
+                    <br>
+                    <p><b>950.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="7" data-name="Combo len sợi nhỏ 250gram mix màu loang"
+                        data-price="950000">thêm vào giỏ</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/lennhunggau.jpg" alt="">
+                <div class="card-body">
+                    <h3> Combo len 250gram</h3>
+                    <p>combo 250gram, sợi mỏng và nhỏ dùng để móc áo hoặc đồ
+                        dùng</p>
+                    <br>
+                    <p><b>100.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="8" data-name="Combo len 250gram" data-price="100000">thêm
+                        vào giỏ</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./images/yaoh.jpg" alt="">
+                <div class="card-body">
+                    <h3> Combo len yaoh 250gram</h3>
+                    <p>combo len yaoh 250gram, sợi mỏng và nhỏ dùng để móc áo hoặc khăn len, đồ
+                        dùng</p>
+                    <br>
+                    <p><b>1.000.000 VNĐ</b> </p>
+                    <button class="add-to-cart" data-id="9" data-name="Combo len yaoh 250gram" data-price="1000000">thêm
+                        vào giỏ</button>
+                </div>
+            </div>
+        </div>
+        <!--profile-->
+ <div class="profile-container">
+  <a href="chitiet.html" class="card-link">
+    <div class="profile-box">
+      <img src="./images/hp.jpg" alt="avatar">
+      <h2>Nguyễn Thị Hà Phương</h2>
+      <p>📚 Sinh viên</p>
+      <p>💻 HTML, CSS, JavaScript</p>
+      <p>sđt: 0123 456 789</p>
+    </div>
+  </a>
+  <a href="chitiet1.html" class="card-link">
+    <div class="profile-box">
+      <img src="./images/tthy.jpg" alt="avatar">
+      <h2>Nguyễn Ngọc Trang Thy</h2>
+      <p>🎨 Designer</p>
+      <p>💻 UI/UX, Photoshop</p>
+      <p>sđt: 0987 654 321</p>
+    </div>
+  </a>
+</div>
+
+ <div id="footer"></div>
+
+        <script src="script.js"></script>
+
+
+    </div>
+    </div>
+
+</body>
+
+</html>

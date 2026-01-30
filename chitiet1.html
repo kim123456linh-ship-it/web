@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thông tin cá nhân 2</title>
+  <link rel="stylesheet" href="chitiet.css">
+</head>
+<body>
+
+ <div class="profile-card">
+
+  <img src="./images/tthy.jpg" alt="avatar" class="avatar">
+
+  <h2>Nguyễn Ngọc Trang Thy</h2>
+
+  <p>📚 Nghề nghiệp: Sinh viên</p>
+  <p>💻 Kỹ năng: HTML, CSS, JavaScript</p>
+  <p>📞 SĐT: 0987 654 321</p>
+
+ <a href="index.html" class="btn">⬅ Quay lại</a>
+</div>
+
+  <div id="footer"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+  
+</body>
+</html>  

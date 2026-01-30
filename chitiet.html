@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thông tin cá nhân</title>
+  <link rel="stylesheet" href="chitiet.css">
+</head>
+<body>
+
+<div class="profile-card">
+
+  <img src="./images/hp.jpg" alt="avatar" class="avatar">
+
+  <h2>Nguyễn Thị Hà Phương</h2>
+
+  <p>📚 Nghề nghiệp: Sinh viên</p>
+  <p>💻 Kỹ năng: HTML, CSS, JavaScript</p>
+  <p>📞 SĐT: 0123 456 789</p>
+
+ <a href="index.html" class="btn">⬅ Quay lại</a>
+</div>
+
+<div id="footer"></div>
+
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+</script>
+
+<script src="chitiet.js"></script>
+</body>
+</html>  

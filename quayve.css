@@ -1,0 +1,144 @@
+.back-home {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #ececee;
+}
+.back-home:hover {
+  text-decoration: underline;
+}
+
+/* ===== GIỎ HÀNG ===== */
+/* ===== ÉP TOÀN BỘ CHỮ & SỐ TRONG BẢNG GIỎ HÀNG THÀNH TRẮNG ===== */
+
+#cart-box table,
+#cart-box table th,
+#cart-box table td,
+#cart-box table td *,
+#cart-box table th * {
+    color: #ffffff !important;
+}
+
+/* INPUT SỐ LƯỢNG */
+#cart-box table input {
+    color: #ffffff !important;
+    background-color: transparent !important;
+    border: 1px solid #ffffff !important;
+}
+
+/* TỔNG TIỀN BÊN DƯỚI */
+#cart-box h3,
+#cart-box h3 span {
+    color: #ffffff !important;
+}
+
+.product-cell {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-cell:last-child {
+  border-bottom: none;
+}
+
+.product-cell img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* TÊN SP VÀ GIÁ */
+.product-info {
+  flex: 1;
+}
+
+.product-info h4 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #1a1919;
+}
+
+.product-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* NÚT XÓA */
+.product-cell button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #ff4d4d;
+  color: rgb(20, 20, 20);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product-cell button:hover {
+  background-color: #e60000;
+}
+/* NỀN TRANG GIỎ HÀNG */
+body {
+  background: #8b1d1d;
+}
+
+/* KHUNG GIỎ HÀNG */
+#cart-box {
+  width: 90%;
+  margin: 30px auto;
+  background: #9c1f1f;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* TABLE */
+#cart-box table {
+  width: 100%;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+#cart-box th,
+#cart-box td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* HEADER */
+#cart-box h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+/* INPUT */
+#cart-box input {
+  width: 60px;
+  text-align: center;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+.clear-cart-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background: #ffffff;
+  color: #8b1d1d;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.clear-cart-btn:hover {
+  background: #ffd6d6;
+}
