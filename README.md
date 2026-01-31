@@ -2,7 +2,7 @@
 ## liên kết đến web trường
 [website](http://bdi.edu.vn/)
 ## link ytb hướng dẫn, báo cáo
-[webste](https://youtu.be/tt4-t3j9c5Q)
+[https://youtu.be/tt4-t3j9c5Q](https://youtu.be/tt4-t3j9c5Q)
 ## mô tả
 Website bán len, gồm trang chủ, sản phẩm, giỏ hàng.
 ## Cách chạy web
